@@ -27,6 +27,7 @@
 body {
     /* Define a imagem de fundo e sua posição/escala */
     background: var(--bg-url) no-repeat top center/cover; 
+    height: 100vh;  /* ajuste no body para não aparecer o fundo branco em baixo */
 }
 
 body * {
@@ -165,4 +166,13 @@ footer {
     font-size: 14px;
 }
 
+/* media queries */
+@media (min-width) {
+    :root {
+        --bg-url: url(./assets/assets/bg-desktop.jpg);
+    }
 
+    .light {
+        --bg-url: url(./assets/assets/bg-desktop-light.jpg);
+    }    
+}
